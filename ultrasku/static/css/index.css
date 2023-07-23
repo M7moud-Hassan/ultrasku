@@ -1,0 +1,333 @@
+
+
+/* custom.css */
+
+@font-face {
+   font-family: 'Cairo';
+  src: url('../fonts/Cairo.ttf') format('truetype');
+}
+
+body,nav{
+font-family:'Cairo';
+background-color:#f8f9fa;
+}
+nav{
+z-index:2;
+}
+ /* Custom CSS for the green button with icon */
+        .custom-btn {
+            background-color: #00b39b;
+            border-radius: 10px;
+            color: white;
+            padding: 12px 35px;
+            color:black;
+            font-size:13px;
+            font-weight:bold;
+        }
+
+        /* Add space between the icon and the text */
+        .custom-btn .btn-icon {
+            margin-right: 5px;
+        }
+
+         .navbar-nav .nav-item{
+         margin-right:10px;
+         margin-left:10px;
+         }
+         .navbar-nav{
+         padding-right: 15px;
+         }
+
+        .navbar-nav .nav-item .nav-link {
+            position: relative;
+            padding-bottom:15px;
+            padding-top:15px;
+            font-size:13px;
+           font-weight: bold;
+
+        }
+
+        .navbar-nav .nav-item .nav-link::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 4px;
+            background-color: #03ec96;
+            transition: width 0.3s;
+            transform-origin: left;
+        }
+
+        .navbar-nav .nav-item .nav-link:hover::before,
+        .navbar-nav .nav-item .nav-link.active::before {
+            width: 100%;
+        }
+
+.div-main{
+       height:500px !important;
+
+}
+.div-row{
+background-image:url('../images/bg_dot_s.png');
+}
+.elementor-background-overlay {
+ background: linear-gradient(180deg, #f8f9fa, white);
+
+            background-color: white;
+opacity: .5;
+transition: background .3s,border-radius .3s,opacity .3s;
+height: 100%;
+width: 100%;
+top: 0;
+left: 0;
+position: absolute;
+}
+ img.img-scale{
+ z-index:2;
+      width: 0;
+      height: 0;
+      animation: scaleAnimation 2s forwards; /* Use keyframes animation with forwards to retain final state */
+    }
+
+    @keyframes scaleAnimation {
+      to {
+        width: 100%; /* Final width when fully scaled */
+        height: 100%; /* Final height when fully scaled */
+      }
+    }
+
+    .section-right h1{
+    font-size:70px;
+    }
+    .section-right p{
+    font-size:24px;
+    max-width:450px;
+    font-weight:650;
+    }
+    .section-right .custom-btn{
+            padding: 17px 35px ;
+            color:#30353b;
+            font-size:18px;
+            font-weight:normal;
+    }
+
+     .moving-div {
+      width: 100%;
+      position: relative;
+      left: -100%;
+      opacity: 0;
+      transition: left 2s ease , opacity 2s;
+    }
+
+     .moving-div2 {
+      width: 100%;
+      position: relative;
+      left: -90%;
+      opacity: 0;
+       transition: left 2s ease , opacity 2s;
+    }
+
+    .moving-div4 {
+      position: relative;
+      top: -100%;
+      opacity: 0;
+      transition: top 1s ease , opacity 1s;
+    }
+    .moving-div7 {
+      position: relative;
+      top: 50%;
+      opacity: 0;
+      transition: top 1s ease , opacity 1s;
+    }
+    .moving-div8 {
+      position: relative;
+      top: 50%;
+      opacity: 0;
+      transition: top 1s ease , opacity 1s;
+    }
+
+    .moving-div9 {
+      position: relative;
+      top: -50%;
+      opacity: 0;
+      transition: top 1s ease , opacity 1s;
+    }
+    .moving-div5 {
+      position: relative;
+      top: 190%;
+      opacity: 0;
+      transition: top 1s ease , opacity 1s;
+    }
+    .moving-div6 {
+      position: relative;
+      top: -50%;
+      opacity: 0;
+      transition: top 1s ease , opacity 1s;
+    }
+    .carousel-caption{
+    color:#26a69a !important;
+    }
+    .carousel-control-next-icon ,.carousel-control-prev-icon{
+    background-color:#26a69a;
+    }
+    .carousel-indicators button{
+    background-color:#26a69a !important;
+    }
+    .move_now4{
+     top:0;
+     opacity: 1;
+    }
+    .move_now{
+    left:0;
+     opacity: 1;
+    }
+
+    .moving-div3 {
+      position: relative;
+      left: 90%;
+      opacity: 1;
+       transition: left 2s ease , opacity 2s;
+    }
+    .move_now3{
+    left:0;
+     opacity: 1;
+    }
+
+    .path-div{
+    transform: rotate(180deg);
+    bottom: -1px;
+    overflow: hidden;
+position: absolute;
+left: 0;
+width: 100%;
+line-height: 0;
+direction: ltr !important;
+box-sizing: border-box;
+    }
+   .path-div svg{
+   fill:white;
+    height: 300px;
+transform: translateX(-50%) rotateY(180deg);
+z-index: 1;
+display: block;
+width: calc(100% + 1.3px);
+position: relative;
+left: 50%;
+    }
+
+    .item-card{
+    border-radius: 15px;
+    position:relative;
+    z-index:10;
+    height: 100%;
+    }
+    .item-card p{
+    color:#86939f;
+    }
+    .items-cards{
+    position: relative;
+      bottom: -200px;
+       transition: bottom 1s ease;
+    }
+    .img-eng{
+    padding: 2em 3em 3em 2em;
+       }
+    .img-eng img{
+    width: 100%;
+height: 350px;
+object-fit: cover;
+object-position: center center;
+border-radius: 10px 10px 10px 10px;
+box-shadow: 0 30px 60px 0 rgba(0,0,0,.2);
+    }
+    .counter{
+    background-color:white;
+    padding:7px 30px;
+    border-radius:15px;
+    position:relative;
+    top:-85%;
+    width: 30%;
+    transform: scale(0); /* Start with scale 0 */
+  transition: transform 2s; /* Transition over 2 seconds */
+
+    }
+    .animate-counter{
+    transform: scale(1);
+    }
+    .counter h1{
+    color:#03e0bf;
+    font-size:70px ;
+    font-weight:bold;
+    letter-spacing:-1px;
+    }
+    .ppp{
+    padding-top:35px !important;
+    }
+    .counter p{
+    color:#86939f;
+    line-height:1px;
+    font-size:12px;
+    font-weight:bold;
+    }
+    .ppp > p:first-child {
+    color:#03e0bf;
+    font-size:20px;
+    }
+    .ppp>p:nth-child(2) {
+    font-size:40px;
+    line-height:43px;
+    }
+
+    .ppp>p:nth-child(3) {
+    padding-top:25px;
+    font-size:20px;
+    }
+
+     @keyframes scaleCounter {
+      to {
+         width:30%;
+        height: auto;
+      }
+    }
+
+    .why-section>h1{
+    font-size:50px;
+
+    }
+    .why-section .container{
+    background-color:#f8fafa;
+    border-radius:10px;
+
+    }
+    .why-section .container p {
+    font-size:18px;
+     }
+    .why-section .container h1{
+    font-size:30px;
+    }
+
+    .why-section .icon{
+    background-color:#03e0bf;
+    color:white;
+    font-size:25px;
+    }
+    .card-list{
+    padding:20px 30px;
+    border-radius:20px;
+    transition: box-shadow 0.3s ease;
+    }
+    .card-list:hover {
+      box-shadow: 8px 8px 8px 6px rgba(0, 0, 0, 0.3) !important;
+    }
+     .card-list i{
+     color:#03e0bf;
+     font-size:30px;
+     margin:10px;
+     margin-top:20px;
+     }
+     .card-list p{
+     padding:10px;
+     font-size:25px;
+     font-weight:700;
+     }
