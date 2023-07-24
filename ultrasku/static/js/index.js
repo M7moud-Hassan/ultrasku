@@ -1,6 +1,10 @@
  window.onload = function() {
       const div = document.querySelector('.moving-div');
+      if(window.innerWidth>800){
       div.style.left = '-10%';
+      }else{
+       div.style.left = '0%';
+      }
       div.style.opacity = '1';
     };
 
@@ -131,6 +135,17 @@ const moving_div8=document.querySelector(".moving-div8");
   }, options);
 
   observer9.observe(moving_div9);
+
+  const moving_div10=document.querySelector(".ddd");
+   const observer10 = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+      moving_div10.classList.add("pulsate");
+      }
+    });
+  }, options);
+
+  observer10.observe(moving_div10);
 };
 
 startCounterOnScroll();

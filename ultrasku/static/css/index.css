@@ -6,7 +6,18 @@
    font-family: 'Cairo';
   src: url('../fonts/Cairo.ttf') format('truetype');
 }
+.elementor-background-overlay{
+ background: linear-gradient(180deg, #f8f9fa, white);
 
+            background-color: white;
+opacity: .5;
+transition: background .3s,border-radius .3s,opacity .3s;
+height: 100%;
+width: 100%;
+top: 0;
+left: 0;
+position: absolute;
+}
 body,nav{
 font-family:'Cairo';
 background-color:#f8f9fa;
@@ -71,18 +82,7 @@ z-index:2;
 .div-row{
 background-image:url('../images/bg_dot_s.png');
 }
-.elementor-background-overlay {
- background: linear-gradient(180deg, #f8f9fa, white);
 
-            background-color: white;
-opacity: .5;
-transition: background .3s,border-radius .3s,opacity .3s;
-height: 100%;
-width: 100%;
-top: 0;
-left: 0;
-position: absolute;
-}
  img.img-scale{
  z-index:2;
       width: 0;
@@ -311,6 +311,8 @@ box-shadow: 0 30px 60px 0 rgba(0,0,0,.2);
     background-color:#03e0bf;
     color:white;
     font-size:25px;
+    width:75px;
+    height:75px;
     }
     .card-list{
     padding:20px 30px;
@@ -330,4 +332,72 @@ box-shadow: 0 30px 60px 0 rgba(0,0,0,.2);
      padding:10px;
      font-size:25px;
      font-weight:700;
+     }
+     .bg-img{
+     background-image: url('../images/programmer.jpg');
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+     }
+     .ddd{
+     color:white;
+     padding-top:140px !important;
+     padding-bottom:140px !important;
+     transition: transform 0.5s ease;
+     }
+     @keyframes pulseAnimation {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+footer{
+background-color: #50575f;
+}
+.pulsate {
+  animation: pulseAnimation 2s ease;
+}
+     .ddd p{
+     font-size:15px;
+     }
+     .ddd h1{
+     font-size:45px;
+     }
+
+     .bg-footer {
+      background-color: rgba(65, 71, 78, 0.8);
+  margin-top: 60px !important;
+  padding-top: 100px;
+
+}
+.fixed-bottom-left {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index:300;
+}
+.fixed-bottom-left .custom-btn:hover{
+color:black !important;
+}
+
+.footer-div{
+background-image: url('../images/bg_footer.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-middle-footer{
+  border-radius: 20px 20px 0 0;
+height:100px;
+color:white;
+background-color:#30353b;
+}
+     .bg-footer p {
+     color:white;
+      transition: color 1s;
+     }
+     .bg-footer p:hover{
+     color:#00ff6a;
+     }
+     .bg-footer a{
+     text-decoration:none;
      }
